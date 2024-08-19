@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-header, .bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.top-header .welcome {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-header .opt {
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.bottom-header .active-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.quick-access {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.quick-access-border, .anchor-links-border {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.quick-access-border .librarian {
+    text-align: center;
+}
+
+.quick-access-border .librarian img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.anchor-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.anchor-links ul li {
+    margin: 10px 0;
+}
+
+.anchor-links ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.page {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.box .sub-box {
+    text-align: center;
+}
+
+.infoPlaceholder {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-playground .section1 {
+    margin-bottom: 20px;
+}
+
+.main-playground .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.books {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.books img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.book-available-quantity {
+    margin-top: 5px;
+    color: #28a745;
+}
+
+footer {
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+.footer .foot {
+    margin-bottom: 20px;
+}
+
+.footer .foot-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .link {
+    margin-bottom: 5px;
+}
+
+.footer .link a {
+    color: white;
+    text-decoration: none;
+}

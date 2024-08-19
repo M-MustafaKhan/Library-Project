@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto", sans-serif;
+}
+.body{
+    overflow: hidden;
+}
+.top-header{
+    height:50px;
+    background-color: #072044;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.top{
+    color: #fff;
+}
+.welcome{
+    margin-right: 11rem;
+}
+.made-by{
+    margin-left: 5rem;
+}
+nav{
+    background-color: #fff;
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    padding: 0 1.25rem;
+}
+.bottom-header{
+    height:55.5px;
+    background-color:#31aae1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 20;
+    top: 0rem;
+}
+.bottom-header a{
+    text-decoration: none;
+    color:black;
+}
+.opt{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.active-button{
+    opacity: 1;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    padding: 1rem;
+    cursor: pointer;   
+}
+.opt:hover{
+    font-weight: 700;
+    color: black;
+    opacity: 1;
+}
+.uceou-logo{
+    display: flex;
+}
+.logo img{
+    height: 75px;
+    margin: 1rem;
+}
+
+/* main */
+main{
+    display: flex;
+    background-color:#fff;
+}
+.page{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+.page-afterclick{
+    display: none;
+    width: 100%;
+}
+.buySell{
+    display: none;
+}
+.buySell-afterclick{
+    /* display: flex; */
+    width: 100%;
+    overflow: hidden;
+    .sub-box{
+        display: flex;
+        width: 50%;
+        text-align: center;
+        justify-content: space-around;
+        option{
+            background-color: antiquewhite;
+        }
+        button{
+            margin: 2.75rem 0 0 0;
+        }
+    }
+   
+}
+.collectionsHeader{
+    display: none;
+}
+.collectionsHeader-afterclick{
+    display: flex;
+}
+.departmentsHeader{
+    display: none;
+}
+.departmentsHeader-afterclick{
+    display: flex;
+}
+.box{
+    float:right;
+    margin: 0.25rem 0 0 0;
+    background-color: #062045;
+    height: 150px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-box{
+    background-color:#fff;
+    width: 75%;
+    line-height: 2.25rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+.sub-box span{
+    color:#062045;
+    font-size: 1.65rem;
+    font-weight: 900;
+}
+.sub-box label{
+    text-align: center;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+.sub-box label input{
+    background-color: antiquewhite;
+    width: 55%;
+    height: 1.75rem;
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.75rem;
+}
+.infoPlaceholder::-webkit-input-placeholder {
+    font-weight: 600;
+    color:grey;
+}
+.sub-box button{
+    width: 5rem;
+    height: 1.75rem;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color:#062045;
+}
+.sub-box button:hover{
+    background-color: white;
+    color: black;
+    border:1.5px solid black;
+    cursor: pointer;
+
+}
+
+/* quick-access sidebar */
+.quick-access-border{
+    border: 2px solid black;
+    margin: 0.25rem;
+    background-color: #fff;
+}
+.quick-access{
+    width:15%;
+    background-color: #062045;
+    margin: 0.25rem 0.25rem 0.25rem 0.15rem;
+}
+.librarian-about{
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+    color: #31aae1;
+    font-weight: 700;
+}
+.librarian-about span{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.librarian-image{
+    text-align: center;
+}
+.librarian-image img{
+    height: 10rem; 
+    margin: 1rem 0 0 0;
+    border-radius: 0.5rem;
+}
+.info{
+    text-align: center;
+    color: black;
+    line-height: 2rem;
+}
+.librarian-info{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0 0;
+}
+.library-contact span{
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.library-hours{
+    margin-bottom: 1.15rem;
+}
+.library-hours span1{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.library-hours span{
+    opacity: 1;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+/* anchor-links */
+.anchor-links-border{
+    border: 2px solid black;
+    margin: 0.75rem 0.25rem 0.25rem 0.25rem;
+    background-color: #fff;
+    position: sticky;
+    top:4rem;
+    z-index: 10;
+}
+.anchor-links{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.75rem;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+.explore-around{
+    color:#31aae1;
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+.anchor-links-list{
+    text-align: center;
+    line-height: 3rem;
+}
+.anchor-links-list a{
+    font-size: 0.95rem;
+    text-decoration: none;
+    color:black;
+}
+.anchor-links-list a:hover{
+    color: #31aae1;
+}
+.anchor-links-list a span{
+    font-weight: 600;
+    font-size:1rem;
+}
+
+/* main-playground */
+.main-playground{
+    background-color: white;
+    height: 100%;
+    border-radius: 2rem;
+    margin: 0.25rem 0.35rem 0 0;
+}
+.library-title{
+    font-size: 3rem;
+    font-weight: 650;
+    color: #31aae1;
+    margin-left: 1.5rem;
+}
+.library-about-main-info{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 1.5rem 0.75rem 1.5rem;
+}
+
+/* sections */
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem 0;
+}
+.book-section{
+    display: flex;
+    /* justify-content: space-between; */
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.books{
+    width: max-content;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.books img{
+    height: 16rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+.book-name{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.35rem;
+}
+.book-available-quantity{
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.75;
+}
+
+/* footer */
+.footer{
+    background-color: #062045;
+    display: flex;
+    justify-content: center;
+}
+.foot{
+    margin: 4rem;
+    line-height: 2rem;
+    color: white;
+    width: 10%;
+}
+.foot-heading{
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    font-size: 0.95rem;
+    padding: 0.25rem 0 0.25rem 0;
+    font-weight: 300;
+    transition: all 0.5s ease;
+    width: 120%;
+}
+.link:hover{
+    padding: 0.25rem 0 0.25rem 0.35rem;
+}
+
+.bottom-footer{
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    justify-content: space-around;
+}
+.credit{
+    margin: 0.75rem 7.5rem 0.75rem 0;
+    cursor: pointer;
+}
+.bottom-footer-right{
+    display: flex;
+    margin: 0.75rem 0 0.75rem 1.5rem;
+}
+.policy{
+    padding: 0 1.5rem 0 0; 
+    cursor: pointer;
+}
