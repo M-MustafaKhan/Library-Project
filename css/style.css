@@ -22,16 +22,17 @@
 .made-by{
     margin-left: 5rem;
 }
-nav{
+.banner{
+    display: flex;
     background-color: #fff;
     height: 129px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 .logo{
-    padding: 0 1.25rem;
+    padding: 0 0.75em;
 }
+
 .bottom-header{
     height:55.5px;
     background-color:#31aae1;
@@ -39,8 +40,8 @@ nav{
     align-items: center;
     justify-content: center;
     position: sticky;
+    top: 0px;
     z-index: 20;
-    top: 0rem;
 }
 .bottom-header a{
     text-decoration: none;
@@ -186,7 +187,7 @@ main{
     margin: 0.25rem;
     background-color: #fff;
 }
-.quick-access{
+aside{
     width:15%;
     background-color: #062045;
     margin: 0.25rem 0.25rem 0.25rem 0.15rem;
