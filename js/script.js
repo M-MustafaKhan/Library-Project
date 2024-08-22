@@ -5,6 +5,62 @@ let collections = document.querySelector(".collectionsHeader");
 let departments = document.querySelector(".departmentsHeader");
 let BuySellSearchButton = document.querySelector("#buySell-SearchButton")
 
+//Book Section 1
+
+//Function to add books
+function addBooks(ID, books){
+    let bookSection = document.querySelector(`${ID}`);
+    bookSection.classList.add("book-section");
+    for(let book of books){
+        let subSection = document.createElement("div");
+        subSection.className = 'books';
+        subSection.innerHTML = `<img src="${book.image}">
+                                <div class="book-name">${book.name}</div>
+                                <div class="book-available-quantity">${book.quantity} books left</div>`
+        bookSection.append(subSection);
+    }
+    }
+
+//Sample data of books
+const books = [
+    { name: "Book 1", quantity: 3, image: "/assets/book.jpg" },
+    { name: "Book 2", quantity: 5, image: "/assets/book.jpg" },
+    { name: "Book 3", quantity: 2, image: "/assets/book.jpg" },
+    { name: "Book 4", quantity: 4, image: "/assets/book.jpg" },
+    { name: "Book 5", quantity: 1, image: "/assets/book.jpg" },
+    { name: "Book 6", quantity: 6, image: "/assets/book.jpg" },
+    { name: "Book 7", quantity: 3, image: "/assets/book.jpg" },
+    { name: "Book 8", quantity: 7, image: "/assets/book.jpg" },
+];
+addBooks("#booksID", books);
+
+//Sample data of Journals
+const journals = [
+    { name: "Book 1", quantity: 3, image: "/assets/journnal.htm" },
+    { name: "Book 2", quantity: 5, image: "/assets/journnal.htm" },
+    { name: "Book 3", quantity: 2, image: "/assets/journnal.htm" },
+    { name: "Book 4", quantity: 4, image: "/assets/journnal.htm" },
+    { name: "Book 5", quantity: 1, image: "/assets/journnal.htm" },
+    { name: "Book 6", quantity: 6, image: "/assets/journnal.htm" },
+    { name: "Book 7", quantity: 3, image: "/assets/journnal.htm" },
+    { name: "Book 8", quantity: 7, image: "/assets/journnal.htm" },
+];
+addBooks("#journal", journals);
+
+//Sample data for Recommended Readings
+const recRead = [
+    { name: "Book 1", quantity: 3, image: "/assets/book.jpg" },
+    { name: "Book 2", quantity: 5, image: "/assets/book.jpg" },
+    { name: "Book 3", quantity: 2, image: "/assets/book.jpg" },
+    { name: "Book 4", quantity: 4, image: "/assets/book.jpg" },
+    { name: "Book 5", quantity: 1, image: "/assets/book.jpg" },
+    { name: "Book 6", quantity: 6, image: "/assets/book.jpg" },
+    { name: "Book 7", quantity: 3, image: "/assets/book.jpg" },
+    { name: "Book 8", quantity: 7, image: "/assets/book.jpg" },
+];
+addBooks("#recRead", recRead);
+
+
 //HomePage Function Toggles
 function hideHomePage() {
     page.setAttribute("class", 'page-afterclick');
