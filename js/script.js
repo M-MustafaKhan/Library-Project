@@ -1,6 +1,7 @@
 let bottomHeaders = document.querySelectorAll(".opt");
 let page = document.querySelector(".page");
 let buySell = document.querySelector(".buySell");
+let buySellBooksSection = document.querySelector("#buySellPlayground");
 let collections = document.querySelector(".collectionsHeader");
 let departments = document.querySelector(".departmentsHeader");
 let BuySellSearchButton = document.querySelector("#buySell-SearchButton")
@@ -9,7 +10,7 @@ let BuySellSearchButton = document.querySelector("#buySell-SearchButton")
 
 //Function to add books
 function addBooks(ID, books){
-    let bookSection = document.querySelector(`${ID}`);
+    let bookSection = document.querySelector(ID);
     bookSection.classList.add("book-section");
     for(let book of books){
         let subSection = document.createElement("div");
@@ -60,6 +61,79 @@ const recRead = [
 ];
 addBooks("#recRead", recRead);
 
+
+//Buy/Sell - onclick responsiveness
+
+//function to show the relevant books
+function showBuySellBooks(){
+
+}
+//Sample data for Buy/Sell - CSE
+const CSEBuySell = [
+    { name: "Book 1", quantity: 3, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 2", quantity: 5, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 3", quantity: 2, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 4", quantity: 4, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 5", quantity: 1, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 6", quantity: 6, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 7", quantity: 3, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 8", quantity: 7, image: "/assets/CSE-Buy-Sell.webp" },
+]; 
+const MECHBuySell = [
+    { name: "Book 1", quantity: 3, image: "/assets/mech.avif" },
+    { name: "Book 2", quantity: 5, image: "/assets/mech.avif" },
+    { name: "Book 3", quantity: 2, image: "/assets/mech.avif" },
+    { name: "Book 4", quantity: 4, image: "/assets/mech.avif" },
+    { name: "Book 5", quantity: 1, image: "/assets/mech.avif" },
+    { name: "Book 6", quantity: 6, image: "/assets/mech.avif" },
+    { name: "Book 7", quantity: 3, image: "/assets/mech.avif" },
+    { name: "Book 8", quantity: 7, image: "/assets/mech.avif" },
+]; 
+const CIVILBuySell = [
+    { name: "Book 1", quantity: 3, image: "/assets/civil.png" },
+    { name: "Book 2", quantity: 5, image: "/assets/civil.png" },
+    { name: "Book 3", quantity: 2, image: "/assets/civil.png" },
+    { name: "Book 4", quantity: 4, image: "/assets/civil.png" },
+    { name: "Book 5", quantity: 1, image: "/assets/civil.png" },
+    { name: "Book 6", quantity: 6, image: "/assets/civil.png" },
+    { name: "Book 7", quantity: 3, image: "/assets/civil.png" },
+    { name: "Book 8", quantity: 7, image: "/assets/civil.png" },
+]; 
+const BMEBuySell = [
+    { name: "Book 1", quantity: 3, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 2", quantity: 5, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 3", quantity: 2, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 4", quantity: 4, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 5", quantity: 1, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 6", quantity: 6, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 7", quantity: 3, image: "/assets/CSE-Buy-Sell.webp" },
+    { name: "Book 8", quantity: 7, image: "/assets/CSE-Buy-Sell.webp" },
+]; 
+
+let buySellSearchBtn = document.querySelector("#buySell-SearchButton");
+
+buySellSearchBtn.addEventListener("click" , () => {
+    let department = document.querySelector("#dropdown-departments");
+    let depValue = department.value;
+    buySellBooksSection.innerHTML = "";
+    switch(depValue){
+        case "CSE" :
+            addBooks("#Buy-Sell", CSEBuySell);
+            break;
+        case "MECH" :
+            addBooks("#Buy-Sell", MECHBuySell);
+            break;
+        case "Civil" :
+            addBooks("#Buy-Sell", CIVILBuySell);
+            break;
+        case "BME" :
+            addBooks("#Buy-Sell", BMEBuySell);
+            break;
+        default :
+        buySellBooksSection.innerHTML = "<h1><br>Invalid Option !<br> Please select a valid department and year<h1>"
+    }
+});
+ 
 
 //HomePage Function Toggles
 function hideHomePage() {
